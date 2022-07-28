@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<!--
+
+__/\\\________/\\\________/\\\\\\\\\________________/\\\______________/\\\__/\\\\\\\\\\\\\\\__/\\\________/\\\__/\\\\\\\\\\\\\\\_
+ _\/\\\_______\/\\\_____/\\\////////________________\/\\\_____________\/\\\_\///////\\\/////__\/\\\_______\/\\\_\/\\\///////////__
+  _\/\\\_______\/\\\___/\\\/_________________________\/\\\_____________\/\\\_______\/\\\_______\/\\\_______\/\\\_\/\\\_____________
+   _\/\\\\\\\\\\\\\\\__/\\\______________/\\\\\\\\\\\_\//\\\____/\\\____/\\\________\/\\\_______\/\\\\\\\\\\\\\\\_\/\\\\\\\\\\\_____
+    _\/\\\/////////\\\_\/\\\_____________\///////////___\//\\\__/\\\\\__/\\\_________\/\\\_______\/\\\/////////\\\_\/\\\///////______
+     _\/\\\_______\/\\\_\//\\\____________________________\//\\\/\\\/\\\/\\\__________\/\\\_______\/\\\_______\/\\\_\/\\\_____________
+      _\/\\\_______\/\\\__\///\\\___________________________\//\\\\\\//\\\\\___________\/\\\_______\/\\\_______\/\\\_\/\\\_____________
+       _\/\\\_______\/\\\____\////\\\\\\\\\___________________\//\\\__\//\\\____________\/\\\_______\/\\\_______\/\\\_\/\\\_____________
+        _\///________\///________\/////////_____________________\///____\///_____________\///________\///________\///__\///______________
+-->
+<head>
+  <title>浩创梧桐华府-2号地1期-时间线</title>
+  <meta name="description" content="The human computer interface helps to define computing at any one time.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,width=device-width">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <!-- Style-->
+  <style>
+    html, body {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    /*添加段之间的间距*/
+    p {
+      padding-top: 20px;
+    }
+    /*在日期与标题之间添加填充*/
+    .tl-headline-date {
+      padding-bottom: 20px;
+    }
+  </style>
+  <link rel="shortcut icon" href="static/images/favicon.svg">
+</head>
+<body>
+<div id="timeline-embed">
+  <div id="timeline"></div>
+
+</div>
+<!-- https://cdn.bootcdn.net/ajax/libs/timelinejs/3.6.6/css/fonts/font.default.min.css -->
+<!-- https://cdn.bootcdn.net/ajax/libs/timelinejs/3.6.6/css/fonts/font.knightlab.min.css -->
+<link href="https://cdn.bootcdn.net/ajax/libs/timelinejs/3.6.6/css/fonts/font.abril-droidsans.css" rel="stylesheet">
+<link href="https://cdn.bootcdn.net/ajax/libs/timelinejs/3.6.6/css/timeline.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/timelinejs/3.6.6/js/timeline-min.js"></script>
+<script>
+  let options = {
+    hash_bookmark: false,
+    initial_zoom: 2,
+    // timenav_position Display the timeline nav on the top or bottom.
+    timenav_position: 'bottom',
+    scale_factor: 5,
+    // start_at_end: true,
+    debug: true,
+    language: 'zh-cn',
+    marker_padding: 5,
+    use_bc: true,
+    dragging: true,
+    track_events:['back_to_start', 'nav_next', 'nav_previous', 'zoom_in', 'zoom_out']
+  };
+  $(document).ready(function () {
+    let embed = document.getElementById('timeline-embed');
+    embed.style.height = getComputedStyle(document.body).height;
+    window.timeline = new TL.Timeline('timeline-embed', 'static/data/data-220719.json', options);
+    window.addEventListener('resize', function () {
+      let embed = document.getElementById('timeline-embed');
+      embed.style.height = getComputedStyle(document.body).height;
+      timeline.updateDisplay();
+    });
+  });
+</script>
+</body>
+</html>

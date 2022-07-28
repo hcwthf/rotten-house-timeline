@@ -1,0 +1,118 @@
+{
+  "scale": "human",
+  "title": {
+    "media": {
+      "caption": "",
+      "credit": "<a href=\"https://github.com/hcwthf/rotten-house-timeline\" target=\"_blank\"> rotten-house-timeline <a>",
+      "url": "static/images/index/wthf.jpg"
+    },
+    "text": {
+      "headline": "梧桐华府2号地1期业主求生之路",
+      "text": "按照时间发生的先后顺序记录梧桐华府业主求生之路<br><br>项目地址: <a href=\"https://github.com/hcwthf/rotten-house-timeline\"> rotten-house-timeline </a><br><br> 联系邮箱: hcwthf@gmail.com\n <br><br>Copyright: 梧桐华府业主"
+    }
+  },
+  "events": [
+
+    {
+      "media": {
+        "caption": "<a href=\"https://www.ccreports.com.cn/show-7-9771-1.html\">签订购房合同2020-2021</a>",
+        "credit": "",
+        "url": "static/images/CITROEN.png"
+      },
+      "text": {
+        "headline": "签订购房合同(2020-2021)",
+        "text": "一期2号地 预计大约800户 在(2020-2021) 签订购房合同"
+      },
+      "start_date": {
+        "month": "10",
+        "day": "06",
+        "year": "2020"
+      },
+      "group": "event"
+    },
+    {
+      "media": {
+        "caption": "<a href=\"https://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway\">Hackers Remotely Kill a Jeep on the Highway—With Me in It</a>",
+        "credit": "",
+        "url": "static/images/Jeep_2015.jpg"
+      },
+      "text": {
+        "headline": "吉普和克莱斯勒可被远程劫持，克莱斯勒召回 140 万辆轿车和卡车",
+        "text": "由于担心黑客控制汽车，克莱斯勒宣布召回 140 万辆轿车和卡车。在两名黑客的演示中，他们证明了可以从任何接入互联网的地方，远程获取汽车的关键功能操作权限，比如踩下刹车、让引擎熄火、把车开下公路，并令所有电子设备宕机。"
+      },
+      "start_date": {
+        "month": "01",
+        "day": "01",
+        "year": "2021"
+      },
+      "group": "vulnerability"
+    },
+    {
+      "media": {
+        "caption": "<a href=\"https://trifinite.org/stuff/project_tempa/\">Project TEMPA</a>",
+        "credit": "<a href=\"https://trifinite.org/Downloads/20220604_tempa_presentation_recon22_public.pdf\">Demystifying Tesla’s Bluetooth Passive Entry System</a>",
+        "url": "https://youtu.be/yfG4JS71eUY"
+      },
+      "text": {
+        "headline": "任意创建 Tesla 蓝牙钥匙",
+        "text": "Trifinite 公司的 Martin Herfurt 发现了 TESLA  钥匙注册新钥匙的方法，在NFC钥匙开门的130秒内，能够与车身 BLE 蓝牙钥匙模块通信，并注册一把新的钥匙。利用钥匙系统的这一缺陷可以创建全新的蓝牙钥匙。<br>  <br><br> 此外，他们还发现通过发送特定 BLE 消息能够绕过 PIN2DRIVE。"
+      },
+      "start_date": {
+        "month": "05",
+        "day": "01",
+        "year": "2021"
+      },
+      "group": "vulnerability"
+    },
+    {
+      "media": {
+        "caption": "<a href=\"https://trifinite.org/stuff/project_tempa/\">Project TEMPA</a>",
+        "credit": "<a href=\"https://trifinite.org/Downloads/20220604_tempa_presentation_recon22_public.pdf\">Demystifying Tesla’s Bluetooth Passive Entry System</a>",
+        "url": "https://youtu.be/yfG4JS71eUY"
+      },
+      "text": {
+        "headline": "任意创建 Tesla 蓝牙钥匙",
+        "text": "Trifinite 公司的 Martin Herfurt 发现了 TESLA  钥匙注册新钥匙的方法，在NFC钥匙开门的130秒内，能够与车身 BLE 蓝牙钥匙模块通信，并注册一把新的钥匙。利用钥匙系统的这一缺陷可以创建全新的蓝牙钥匙。<br>  <br><br> 此外，他们还发现通过发送特定 BLE 消息能够绕过 PIN2DRIVE。"
+      },
+      "start_date": {
+        "month": "05",
+        "day": "05",
+        "year": "2021"
+      },
+      "group": "explore"
+    },
+    {
+      "media": {
+        "caption": "<a href=\"https://rollingpwn.github.io/rolling-pwn/\">Rolling Pwn Attack</a>",
+        "credit": "<a herf=\"https://www.bleepingcomputer.com/news/security/hackers-can-unlock-honda-cars-remotely-in-rolling-pwn-attacks/\">  Hackers can unlock Honda cars remotely in Rolling-PWN attacks</a>",
+        "url": "https://rollingpwn.github.io/rolling-pwn/video/Demo-Video-Accord.mp4"
+      },
+      "text": {
+        "headline": "Rolling Pwn:无线钥匙滚动码回滚漏洞",
+        "text": "星舆实验室 Kevin2600 与 Wesley Li 发现汽车无线(RF)钥匙滚动码存在设计缺陷，发送连续的控车指令会导致滚动码计数器回滚，之前使用过的本应失效的控车指令得到恢复。此漏洞与同一团队之前发现的CVE-2021-46145漏洞相似。利用滚动码这一缺陷，能够打开车门甚至是启动引擎。自2012年款至今的大量的本田汽车受到影响。已验证受到影响的车型如下。<br><br>  · Honda Civic 2012<br>  · Honda X-RV 2018<br>  · Honda C-RV 2020<br>  · Honda Accord 2020<br>  · Honda Odyssey 2020<br>  · Honda Inspire 2021<br>  · Honda Fit 2022<br>  · Honda Civic 2022<br>  · Honda VE-1 2022<br>  · Honda Breeze 2022<br>"
+      },
+      "start_date": {
+        "month": "20",
+        "day": "10",
+        "year": "2021"
+      },
+      "group": "event"
+    }
+  ],
+  "eras":{
+    "start_date": {
+      "month": "1",
+      "day": "1",
+      "year": "2020"
+    },
+    "end_date": {
+      "month": "12",
+      "day": "31",
+      "year": "2023"
+    },
+    "text": {
+      "headline": "2020年",
+      "text": "2020年"
+    }
+  }
+}
